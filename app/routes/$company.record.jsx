@@ -167,17 +167,6 @@ export default function Record() {
 
   return (
     <>
-      <video
-        width="320"
-        height="240"
-        controls
-        className="w-full lg:w-[90%] lg:w-[30%]"
-      >
-        <source
-          src="https://firebasestorage.googleapis.com/v0/b/webvideol-sning.appspot.com/o/companies%2F123%2Fcustomers%2F123%2FxIwc2urgvd2Uf7sZ0GkP.mp4?alt=media&token=468080e1-5fc5-4aca-be3b-debf398379de"
-          type="video/mp4"
-        ></source>
-      </video>
       <div className="p-4 mb-24 fixed bottom-0 z-80 w-full flex flex-col items-center lg:relative">
         {openVideo && (
           <div className="w-full flex flex-col items-center">
