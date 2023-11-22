@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 8px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+input[type="checkbox"]:active,
+input[type="checkbox"]:checked:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"]:checked {
+  background-color: #e9ecee;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+    inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+  color: #99a1a7;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "\2714";
+  font-size: 14px;
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  color: #99a1a7;
+}
+
+select{
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+tr {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+button {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.p-button {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 5px;
+  display: inline;
+}
+
+.icon {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/***** navbar  ******/
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+a.active {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+a.active svg{
+  color: violet;
+}
+
+a.active::after {
+  content: "";
+  position: absolute;
+  transform: translate(0, -35px);
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+a.active svg {
+  z-index: 2;
+  position: relative;
+  transform: translateY(-23px);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-link {
+    flex-direction: column-reverse;
+  }
+  a.active::after {
+    transform: translate(0, 35px);
+  }
+  a.active svg {
+    transform: translateY(23px);
+  }
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "OneCode",
+        "amountOfUsers": 5,
+        "userLimit": 10
+    },
+    {
+        "id": 2,
+        "name": "Eurodan-Huse",
+        "amountOfUsers": 5,
+        "userLimit": 10
+    },
+    {
+        "id": 3,
+        "name": "C-Solution",
+        "amountOfUsers": 5,
+        "userLimit": 10
+    }
+]

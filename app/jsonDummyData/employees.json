@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "firstName": "Thomas",
+        "lastName": "Busk",
+        "email": "thomas@onecode.dk",
+        "roles": ["admin"],
+        "companyName": "OneCode",
+        "companyID": 1,
+        "accepted": false
+    },
+    {
+        "id": 2,
+        "firstName": "Lasse",
+        "lastName": "Bickmann",
+        "email": "lasse@onecode.dk",
+        "roles": ["admin"],
+        "companyName": "OneCode",
+        "companyID": 1,
+        "accepted": true
+    },
+    {
+        "id": 3,
+        "firstName": "Jacob",
+        "lastName": "Sørensen",
+        "email": "jacob@onecode.dk",
+        "roles": ["admin"],
+        "companyName": "OneCode",
+        "companyID": 1,
+        "accepted": false
+    },
+    {
+        "id": 4,
+        "firstName": "Bjarke",
+        "lastName": "Pedersen",
+        "email": "bjarke@onecode.dk",
+        "roles": ["admin"],
+        "companyName": "OneCode",
+        "companyID": 1,
+        "accepted": true
+    },
+    {
+        "id": 5,
+        "firstName": "Henrik",
+        "lastName": "kristjansen",
+        "email": "hkr@c-solution.dk",
+        "roles": ["admin"],
+        "companyName": "C-Solution",
+        "companyID": 3,
+        "accepted": true
+    },
+    {
+        "id": 6,
+        "firstName": "Chris",
+        "lastName": "Frandsen",
+        "email": "chris@eurodan-huse.dk",
+        "roles": ["admin"],
+        "companyName": "Eurodan-Huse",
+        "companyID": 2,
+        "accepted": true
+    }
+]
